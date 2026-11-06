@@ -55,4 +55,17 @@ campo_senha.pack(ipady=8, pady=(10, 5))
 # )
 # checkbox_senha.pack(pady=(0, 15))
 
+botao_acessar = tk.Button(
+    janela,
+    text="Acessar",
+    font=("Arial", 12, "bold"),
+    bg="#298fc2",
+    fg="#298fc2",
+    bd=0,
+    highlightthickness=0,
+    cursor="hand2",
+    width=42
+)
+botao_acessar.pack(pady=10, ipady=10)
+
 janela.mainloop() # mantem a janela aberta
