@@ -1,4 +1,5 @@
 import tkinter as tk # importa o tkinter e cria uma abreviacao
+from tkmacosx import Button # importa o Button do tkmacosx para criar botoes com bordas arredondadas
 
 # def alternar_senha():
 #     if campo_senha.cget("show") == "*": # .cget("show") lê o estado atual da propriedade "show"
@@ -55,18 +56,18 @@ campo_senha.pack(ipady=8, pady=(10, 5))
 # )
 # checkbox_senha.pack(pady=(0, 15))
 
-botao_acessar = tk.Button(
+botao_acessar = Button(
     janela,
     text="Acessar",
     font=("Arial", 12, "bold"),
     bg="#298fc2",
-    fg="#298fc2",
-    bd=0,
+    fg="#ffffff",
+    borderless=1,
     highlightthickness=0,
     cursor="hand2",
-    width=42
+    width=330
 )
-botao_acessar.pack(pady=10, ipady=10)
+botao_acessar.pack(pady=2, ipady=10)
 
 
 texto_link = "PRIMEIRO ACESSO"
