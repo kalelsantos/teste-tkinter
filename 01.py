@@ -68,4 +68,16 @@ botao_acessar = tk.Button(
 )
 botao_acessar.pack(pady=10, ipady=10)
 
+
+texto_link = "PRIMEIRO ACESSO"
+link_primeiro_acesso = tk.Label(
+    janela,
+    text= texto_link.upper(),  # converte o texto para maiúsculas
+    font=("arial", 10, "bold"),
+    bg="#ffffff",
+    fg="#298fc2",
+    cursor="hand2"
+)
+link_primeiro_acesso.pack(pady=(0, 10))
+
 janela.mainloop() # mantem a janela aberta
